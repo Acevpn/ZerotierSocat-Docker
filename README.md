@@ -16,10 +16,12 @@ docker run --privileged --name ZerotierSocat zerotiersocat
 
 # Environment Variables
 
-Zerotier_Network_ID = Your Zerotier Network ID. Create your network at https://my.zerotier.com/
+```Zerotier_Network_ID = Your Zerotier Network ID. Create your network at https://my.zerotier.com/
 Socat_Dest_IP = Socat destination IP
 Socat_Dest_Port = Socat destination port.
+```
 
 Socat syntax for RDP
-```socat TCP-LISTEN:3389,fork,reuseaddr TCP:<Computer_IP>:3389
+```
+socat TCP-LISTEN:3389,fork,reuseaddr TCP:<Computer_IP>:3389
 ```
